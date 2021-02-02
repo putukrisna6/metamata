@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.header-title {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 56.35px;
+  text-decoration: none;
+  color: #9CCD62;
+}
+
+.navigation-clean {
+  background: #3a3c42;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+footer {
+  background: #DFDECA;
+  height: 70px;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer-title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #3A3C42;
+}
+
+@media (min-width:768px) {
+  .navigation-clean {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header-title {
+    font-size: 48px;
+  }
+  footer {
+    height: 97px;
+  }
+  .footer-title {
+    font-size: 24px;
+  }
+}
