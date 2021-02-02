@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -37,6 +41,208 @@ code {
   height: 5rem;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 70px;
+  font-size: 40px;
+  color: #F7F8E2;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+.main-image {
+  background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("./images/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1024px;
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  height: 422px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 40px 20px 40px;
+}
+
+.search-section {
+  width: 90%;
+  margin: 3rem 0 3rem 0;
+  
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
+.search-bar {
+  background: #FFFFFF;
+  border: 1px solid #9CCD62;
+  box-sizing: border-box;
+  border-radius: 50px;
+
+  display: block;
+  width: 100%;
+  height: 41px;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.search-button {
+  display: inline-block;
+  width: 100%;
+  height: 41px;
+  left: 985px;
+  top: 557px;
+
+  background: #9CCD62;
+  border-radius: 50px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #FFFFFF;
+
+  border: 1px solid transparent
+}
+
+.search-button:hover {
+  color:black;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-9, .col-3, .col-6{
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 75px;
+  width: 60%;
+}
+
+.result-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 28px;
+  color: #9CCD62;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.recipe-card {
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.recipe-item {
+  background: #3A3C42;
+  border-radius: 10px;
+  min-width: 100%;
+  height: 205px;
+}
+
+.recipe-pic {
+  background-image: url("./images/card.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  min-width: 100%;
+  height: 150px;
+}
+
+.recipe-desc {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.recipe-title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  
+  padding: 15px 30px;
+
+  color: #9CCD62;
+
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.recipe-rect {
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 10px 15px 15px 15px;
+}
+
+.recipe-btn {
+  background: #9CCD62;
+  border-radius: 10px;
+  width: 71px;
+  height: 37px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #000000;
+
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+}
+
 footer {
   background: #DFDECA;
   height: 70px;
@@ -65,10 +271,29 @@ footer {
   .header-title {
     font-size: 48px;
   }
+  .main-title {
+    font-size: 60px;
+  }
+  .search-section {
+    width: 50%;
+  }
   footer {
     height: 97px;
   }
   .footer-title {
     font-size: 24px;
+  }
+  .search-button {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipe-card {
+    width: 33.33%;
+  }
+  .recipe-btn {
+    font-size: 18px;
+    width: 80px;
   }
 }
